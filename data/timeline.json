@@ -1,0 +1,65 @@
+[
+  {
+    "id": "dark-days",
+    "era": "Before the trilogy",
+    "title": "The Dark Days",
+    "description": "Panem 分區對 Capitol 的統治發起反抗，史稱黑暗年代。這場衝突成為後來所有懲罰、宣傳與恐懼政治的源頭，也讓 Capitol 將歷史改寫成統治工具。",
+    "relatedCharacters": ["President Snow"]
+  },
+  {
+    "id": "treaty-of-treason",
+    "era": "After the Dark Days",
+    "title": "The Treaty of Treason",
+    "description": "戰敗後，分區被迫接受叛亂條約。條約不只是政治文件，更像一份將創傷制度化的契約，為飢餓遊戲提供了殘酷的法律外衣。",
+    "relatedCharacters": ["President Snow"]
+  },
+  {
+    "id": "hunger-games-begins",
+    "era": "Early Panem rule",
+    "title": "The Hunger Games begins",
+    "description": "飢餓遊戲開始成為年度儀式，Capitol 透過抽籤、轉播與競技場把分區的失敗反覆演給所有人看。這也是 Panem 將哀悼變成娛樂的起點。",
+    "relatedCharacters": ["President Snow", "Haymitch Abernathy"]
+  },
+  {
+    "id": "tenth-hunger-games",
+    "era": "Prequel era",
+    "title": "10th Hunger Games",
+    "description": "第十屆飢餓遊戲仍保留早期實驗性質，卻已顯露表演、贊助與政治操控的雛形。Lucy Gray Baird 的出現讓競技場第一次被歌聲與不可預測的自由感打開裂縫。",
+    "relatedCharacters": ["Lucy Gray Baird", "President Snow"]
+  },
+  {
+    "id": "seventy-fourth-games",
+    "era": "The Hunger Games",
+    "title": "74th Hunger Games",
+    "description": "Katniss 代替 Prim 成為貢品，與 Peeta 一起進入競技場。這一屆遊戲原本該重複舊秩序，卻因同盟、哀悼與最後的公開挑戰，意外讓反抗的火星被看見。",
+    "relatedCharacters": ["Katniss Everdeen", "Peeta Mellark", "Rue"]
+  },
+  {
+    "id": "seventy-fifth-games",
+    "era": "Catching Fire",
+    "title": "75th Hunger Games / Quarter Quell",
+    "description": "Quarter Quell 將過去勝利者重新推入競技場，企圖摧毀他們作為象徵的力量。結果這場設計好的鎮壓反而串起更多盟友，也讓 Capitol 的控制開始失焦。",
+    "relatedCharacters": ["Katniss Everdeen", "Peeta Mellark", "Finnick Odair", "Johanna Mason"]
+  },
+  {
+    "id": "second-rebellion",
+    "era": "Mockingjay",
+    "title": "The Second Rebellion",
+    "description": "各分區與第十三區的反抗力量浮上檯面，影像宣傳、軍事行動與民眾記憶交織成第二次叛亂。Katniss 的象徵身份在此變得更加沉重，也更加難以被單一陣營控制。",
+    "relatedCharacters": ["Katniss Everdeen", "Gale Hawthorne", "Finnick Odair"]
+  },
+  {
+    "id": "fall-of-capitol",
+    "era": "End of the war",
+    "title": "Fall of the Capitol",
+    "description": "Capitol 的統治崩塌，長久被恐懼維持的秩序走到終點。但勝利並不乾淨，權力轉移與戰爭代價讓每一份檔案都必須保留疑問。",
+    "relatedCharacters": ["Katniss Everdeen", "President Snow", "Primrose Everdeen"]
+  },
+  {
+    "id": "post-war-reconstruction",
+    "era": "After the trilogy",
+    "title": "Post-war reconstruction",
+    "description": "戰後的 Panem 開始重建制度、分區與日常生活。這段時期不只關於政治修復，也關於倖存者如何與記憶共處，如何在灰燼中慢慢恢復普通生活。",
+    "relatedCharacters": ["Katniss Everdeen", "Peeta Mellark", "Haymitch Abernathy"]
+  }
+]

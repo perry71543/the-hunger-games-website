@@ -1,0 +1,106 @@
+[
+  {
+    "id": "1",
+    "name": "District 1",
+    "industry": "Luxury Goods",
+    "status": "Reintegrated after the rebellion",
+    "description": "第一區以奢侈品與精緻工藝聞名，長期與 Capitol 的審美和權力展示緊密相連。戰後的紀錄中，它象徵繁華如何被用來維持階級距離，也象徵重建時必須重新思考價值與勞動。",
+    "notableCharacters": ["Marvel", "Glimmer", "Cashmere", "Gloss"]
+  },
+  {
+    "id": "2",
+    "name": "District 2",
+    "industry": "Masonry and Defense",
+    "status": "Politically transformed after the rebellion",
+    "description": "第二區負責石材、武備與 Peacekeeper 相關體系，是 Capitol 軍事秩序的重要支柱。它的歷史讓人看見忠誠如何被訓練，也看見體制鬆動時，最堅硬的堡壘也會出現裂縫。",
+    "notableCharacters": ["Cato", "Clove", "Brutus", "Enobaria"]
+  },
+  {
+    "id": "3",
+    "name": "District 3",
+    "industry": "Technology",
+    "status": "Rebuilt as technical infrastructure hub",
+    "description": "第三區以電子、工程與技術能力著稱。它在 Panem 的控制系統中扮演關鍵角色，也在反抗中顯示技術可以被重新奪回，成為破解監控與連結盟友的工具。",
+    "notableCharacters": ["Beetee", "Wiress"]
+  },
+  {
+    "id": "4",
+    "name": "District 4",
+    "industry": "Fishing",
+    "status": "Reopened coastal trade routes",
+    "description": "第四區的海洋產業提供漁獲與航海技能，也孕育出熟悉網索、潮汐與水域生存的人。戰後檔案常把這裡視為自由與剝削交錯的海岸線。",
+    "notableCharacters": ["Finnick Odair", "Annie Cresta", "Mags"]
+  },
+  {
+    "id": "5",
+    "name": "District 5",
+    "industry": "Power",
+    "status": "Energy systems under reconstruction",
+    "description": "第五區掌管能源供應，是 Panem 運作的隱形心臟。它提醒檔案庫：統治不只靠軍隊，也靠燈光、電網與每個人以為理所當然的基礎設施。",
+    "notableCharacters": ["Foxface"]
+  },
+  {
+    "id": "6",
+    "name": "District 6",
+    "industry": "Transportation",
+    "status": "Rail and transit routes repaired",
+    "description": "第六區與交通、運輸和軌道系統相關。對 Panem 來說，移動從來不只是距離問題，也關乎誰能被調派、誰被隔離，以及資訊如何沿著路線流動。",
+    "notableCharacters": ["Titus", "District 6 Morphlings"]
+  },
+  {
+    "id": "7",
+    "name": "District 7",
+    "industry": "Lumber",
+    "status": "Forestry labor reorganized",
+    "description": "第七區以林業和木材加工為主，環境粗獷，也形成直接、強悍的區域性格。Johanna Mason 的存在讓這個分區在檔案中帶著劈開假象的銳度。",
+    "notableCharacters": ["Johanna Mason", "Blight"]
+  },
+  {
+    "id": "8",
+    "name": "District 8",
+    "industry": "Textiles",
+    "status": "Factories damaged and restored",
+    "description": "第八區是紡織與工廠勞動的中心，反抗期間曾承受嚴重鎮壓。它的資料頁保留了工業生產、群眾起義與醫療避難所交疊的記憶。",
+    "notableCharacters": ["Paylor", "Bonnie", "Twill"]
+  },
+  {
+    "id": "9",
+    "name": "District 9",
+    "industry": "Grain",
+    "status": "Agricultural supply restored",
+    "description": "第九區負責穀物與糧食處理，雖在主要敘事中曝光不多，卻是 Panem 供應鏈不可或缺的一環。它提醒讀者，沉默的分區也承擔著龐大的歷史重量。",
+    "notableCharacters": ["District 9 Tributes"]
+  },
+  {
+    "id": "10",
+    "name": "District 10",
+    "industry": "Livestock",
+    "status": "Ranching networks stabilized",
+    "description": "第十區以畜牧業為核心，負責動物飼養與肉類供應。這個分區的檔案常被放在供給與剝削之間閱讀：人們維持國家的餐桌，卻未必擁有選擇命運的權利。",
+    "notableCharacters": ["Brandy", "District 10 Tributes"]
+  },
+  {
+    "id": "11",
+    "name": "District 11",
+    "industry": "Agriculture",
+    "status": "Recovering from severe oppression",
+    "description": "第十一區是農業重地，也是嚴厲控制與沉重勞動的象徵。Rue 與 Thresh 讓這個分區的名字不只代表作物，也代表被壓迫者之間的尊嚴與哀悼。",
+    "notableCharacters": ["Rue", "Thresh", "Seeder", "Chaff"]
+  },
+  {
+    "id": "12",
+    "name": "District 12",
+    "industry": "Coal Mining",
+    "status": "Rebuilt after the rebellion",
+    "description": "第十二區曾是煤礦區，也是 Katniss、Peeta 與 Gale 的故鄉。它在戰火中幾乎被摧毀，又在戰後以新的方式重建，成為私人檔案庫中最接近灰燼與新芽的地方。",
+    "notableCharacters": ["Katniss Everdeen", "Peeta Mellark", "Gale Hawthorne", "Haymitch Abernathy", "Primrose Everdeen"]
+  },
+  {
+    "id": "13",
+    "name": "District 13",
+    "industry": "Nuclear Technology and Military Strategy",
+    "status": "Revealed as rebel command center",
+    "description": "第十三區長期被宣稱已毀，實際上在地下維持軍事與政治組織。它是反抗的基地，也是另一種紀律嚴密的權力形式，提醒人們自由與控制有時只隔著一層語言。",
+    "notableCharacters": ["Alma Coin", "Boggs", "Beetee"]
+  }
+]

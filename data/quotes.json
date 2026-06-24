@@ -1,0 +1,58 @@
+[
+  {
+    "id": "quote-1",
+    "text": "Fire is catching.",
+    "speaker": "Katniss Everdeen",
+    "source": "Catching Fire",
+    "note": "短短一句就足以概括象徵失控的瞬間：火不再屬於設計它的人。"
+  },
+  {
+    "id": "quote-2",
+    "text": "Real or not real?",
+    "speaker": "Peeta Mellark",
+    "source": "Mockingjay",
+    "note": "這句話像創傷後的校準工具，也像兩個人重新建立信任的小小儀式。"
+  },
+  {
+    "id": "quote-3",
+    "text": "Hope can outgrow fear.",
+    "speaker": "Archive paraphrase",
+    "source": "Private reading note",
+    "note": "改寫自對 Snow 統治邏輯的理解：威權並不害怕絕望，而是害怕希望失去控制。"
+  },
+  {
+    "id": "quote-4",
+    "text": "Names should be carried.",
+    "speaker": "Archive paraphrase",
+    "source": "Rue memorial note",
+    "note": "Rue 的記憶讓競技場中的死亡重新變回一個人的名字，而不是節目片段。"
+  },
+  {
+    "id": "quote-5",
+    "text": "The song outlives the cage.",
+    "speaker": "Archive paraphrase",
+    "source": "Lucy Gray Baird note",
+    "note": "用來記錄 Lucy Gray 那種難以被制度完全捕捉的舞台感與自由感。"
+  },
+  {
+    "id": "quote-6",
+    "text": "A costume can become a signal.",
+    "speaker": "Archive paraphrase",
+    "source": "Cinna note",
+    "note": "Cinna 的設計提醒我們，影像可以服務權力，也可以悄悄改寫權力。"
+  },
+  {
+    "id": "quote-7",
+    "text": "Survival leaves an archive.",
+    "speaker": "Archive paraphrase",
+    "source": "Haymitch note",
+    "note": "Haymitch 的創傷不像勝利紀念章，更像一份每天都還在更新的戰後檔案。"
+  },
+  {
+    "id": "quote-8",
+    "text": "Rebellion is never weightless.",
+    "speaker": "Archive paraphrase",
+    "source": "Gale and District 13 note",
+    "note": "反抗需要決心，也需要一直追問：我們願意付出的代價是否仍符合最初想守護的東西。"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Katniss Everdeen",
+    "slug": "katniss-everdeen",
+    "district": "District 12",
+    "role": "Tribute / Mockingjay",
+    "firstAppearance": "The Hunger Games",
+    "description": "來自第十二區的獵人與倖存者。她並不是一開始就想成為象徵，但在保護家人、朋友與被壓迫者的選擇中，逐漸成為反抗的火種。她的故事同時關於勇氣，也關於被迫承受象徵重量的人如何尋回自己的聲音。",
+    "tags": ["rebellion", "archer", "district-12"],
+    "relatedQuotes": ["Fire is catching.", "她的沉默有時比演說更接近反抗。"]
+  },
+  {
+    "name": "Peeta Mellark",
+    "slug": "peeta-mellark",
+    "district": "District 12",
+    "role": "Tribute / Baker",
+    "firstAppearance": "The Hunger Games",
+    "description": "第十二區麵包師之子，擅長用溫柔與語言守住人的尊嚴。Peeta 的力量不只在競技場裡存活，而是在制度試圖把人變成表演時，仍努力保留善意、記憶與自我。",
+    "tags": ["hope", "baker", "district-12"],
+    "relatedQuotes": ["Real or not real?", "他提醒檔案庫：溫柔也能抵抗控制。"]
+  },
+  {
+    "name": "Gale Hawthorne",
+    "slug": "gale-hawthorne",
+    "district": "District 12",
+    "role": "Hunter / Rebel Soldier",
+    "firstAppearance": "The Hunger Games",
+    "description": "Katniss 的狩獵夥伴，也是第十二區艱困生活的見證者。Gale 代表反抗中最尖銳的一面：憤怒、策略與代價。他的檔案提醒人們，革命的火也可能灼傷本來想守護的事物。",
+    "tags": ["hunter", "rebellion", "district-12"],
+    "relatedQuotes": ["戰術能推翻高牆，也會留下難以回答的陰影。"]
+  },
+  {
+    "name": "Haymitch Abernathy",
+    "slug": "haymitch-abernathy",
+    "district": "District 12",
+    "role": "Victor / Mentor",
+    "firstAppearance": "The Hunger Games",
+    "description": "第十二區過去的勝利者與導師。他用玩世不恭包住長年的創傷，也用殘酷的清醒幫助貢品看見規則背後的機器。Haymitch 的存在像一份破損但仍可閱讀的倖存者筆記。",
+    "tags": ["mentor", "victor", "trauma"],
+    "relatedQuotes": ["活下來不是結束，而是另一種長期審判。"]
+  },
+  {
+    "name": "Effie Trinket",
+    "slug": "effie-trinket",
+    "district": "Capitol",
+    "role": "Escort / Capitol Liaison",
+    "firstAppearance": "The Hunger Games",
+    "description": "來自 Capitol 體制的護送員，起初像是制度禮儀的精緻外殼。隨著故事推進，她在華麗秩序與真實傷害之間露出裂縫，也讓人看見體制中的人如何慢慢意識到自己參與的舞台。",
+    "tags": ["capitol", "escort", "image"],
+    "relatedQuotes": ["禮儀若遮住痛苦，就成了另一種噪音。"]
+  },
+  {
+    "name": "Primrose Everdeen",
+    "slug": "primrose-everdeen",
+    "district": "District 12",
+    "role": "Healer / Katniss's Sister",
+    "firstAppearance": "The Hunger Games",
+    "description": "Katniss 的妹妹，也是許多重大選擇的情感中心。Prim 從被保護的孩子成長為願意照看他人的治療者，她象徵戰爭最不能被犧牲的柔軟生命。",
+    "tags": ["healer", "family", "district-12"],
+    "relatedQuotes": ["被守護的人，也可能成為守護他人的光。"]
+  },
+  {
+    "name": "President Snow",
+    "slug": "president-snow",
+    "district": "Capitol",
+    "role": "President of Panem",
+    "firstAppearance": "The Hunger Games",
+    "description": "Panem 的威權統治者，擅長把恐懼、希望與表演編排成統治工具。他的檔案不只是反派記錄，也是一份關於權力如何包裝暴力、如何害怕象徵失控的案例。",
+    "tags": ["capitol", "power", "control"],
+    "relatedQuotes": ["恐懼可以維持秩序，但無法真正保存忠誠。"]
+  },
+  {
+    "name": "Finnick Odair",
+    "slug": "finnick-odair",
+    "district": "District 4",
+    "role": "Victor / Rebel Ally",
+    "firstAppearance": "Catching Fire",
+    "description": "第四區勝利者，外表被 Capitol 包裝成魅力符號，內裡卻保存著痛苦與忠誠。Finnick 的檔案揭露勝利者光環背後的剝削，也紀念他在反抗中的勇敢與脆弱。",
+    "tags": ["victor", "district-4", "rebel-ally"],
+    "relatedQuotes": ["被觀看不等於被理解。", "真正的秘密常藏在笑容背後。"]
+  },
+  {
+    "name": "Johanna Mason",
+    "slug": "johanna-mason",
+    "district": "District 7",
+    "role": "Victor / Rebel Ally",
+    "firstAppearance": "Catching Fire",
+    "description": "第七區勝利者，鋒利、憤怒，也極其清醒。Johanna 不願把痛苦修飾成漂亮故事，她像檔案櫃裡最刺手的一份證詞，提醒反抗不必總是溫順或易於被喜愛。",
+    "tags": ["victor", "district-7", "defiance"],
+    "relatedQuotes": ["憤怒有時是拒絕被改寫的最後方法。"]
+  },
+  {
+    "name": "Rue",
+    "slug": "rue",
+    "district": "District 11",
+    "role": "Tribute",
+    "firstAppearance": "The Hunger Games",
+    "description": "第十一區貢品，敏捷、聰明，與 Katniss 建立短暫卻深刻的同盟。Rue 的記憶讓競技場不再只是節目，而是每個名字、每個家庭、每個被奪走童年的具體證明。",
+    "tags": ["tribute", "district-11", "memory"],
+    "relatedQuotes": ["一首歌可以讓一個名字不被制度吞沒。"]
+  },
+  {
+    "name": "Cinna",
+    "slug": "cinna",
+    "district": "Capitol",
+    "role": "Stylist / Quiet Rebel",
+    "firstAppearance": "The Hunger Games",
+    "description": "Katniss 的造型師，懂得讓服裝成為訊息，也懂得在 Capitol 的語言裡埋入反抗。Cinna 的檔案像一份設計手稿：克制、精準，卻能讓象徵燃燒起來。",
+    "tags": ["stylist", "symbol", "capitol"],
+    "relatedQuotes": ["形象可以是籠子，也可以是火把。"]
+  },
+  {
+    "name": "Lucy Gray Baird",
+    "slug": "lucy-gray-baird",
+    "district": "District 12",
+    "role": "Tribute / Performer",
+    "firstAppearance": "The Ballad of Songbirds and Snakes",
+    "description": "第十屆飢餓遊戲中的第十二區貢品，也是以歌聲、機智與舞台感對抗命運的人。Lucy Gray 的資料像早期 Panem 歷史中的民謠殘片，留下表演、自由與消失之間的謎。",
+    "tags": ["performer", "district-12", "prequel"],
+    "relatedQuotes": ["The song outlives the cage.", "故事越早被埋藏，越需要被重新索引。"]
+  }
+]
