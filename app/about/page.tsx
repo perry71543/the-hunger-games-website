@@ -1,4 +1,5 @@
 import { SectionTitle } from "@/components/SectionTitle";
+import { VisualBanner } from "@/components/VisualBanner";
 
 export const metadata = {
   title: "About",
@@ -11,6 +12,11 @@ export default function AboutPage() {
         eyebrow="About This Archive"
         title="關於 Mockingjay Memorial Archive"
         description="這是一個私人使用的《飢餓遊戲 / The Hunger Games》紀念網站，目標是保存個人閱讀記憶、整理資料索引，並以安靜的檔案館形式回望 Panem 的故事。"
+      />
+      <VisualBanner
+        src="/images/private-archive-desk.png"
+        alt="私人檔案桌面，燭光照亮筆記本、索引卡與檔案章"
+        label="Private Fan Archive Workspace"
       />
       <section className="archive-shell pb-16">
         <div className="grid gap-5 md:grid-cols-3">

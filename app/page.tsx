@@ -8,6 +8,10 @@ const entryCards = [
     title: "角色檔案",
     marker: "Character Files",
     code: "CF",
+    image: {
+      src: "/images/character-dossiers.png",
+      alt: "暗色角色檔案牆，排列著匿名人物剪影與資料夾",
+    },
     description:
       "整理主要角色的身份、分區、首次登場與私人閱讀筆記，像翻閱一份戰後保存的證詞冊。",
   },
@@ -16,6 +20,10 @@ const entryCards = [
     title: "分區資料",
     marker: "District Records",
     code: "DR",
+    image: {
+      src: "/images/district-records-map.png",
+      alt: "暗色金屬桌上的分區地圖、工業材料與標記針",
+    },
     description:
       "從 District 1 到 District 13，收錄產業、狀態與重要人物，作為 Panem 地圖的索引。",
   },
@@ -24,6 +32,10 @@ const entryCards = [
     title: "時間線",
     marker: "Historical Timeline",
     code: "TL",
+    image: {
+      src: "/images/timeline-archive.png",
+      alt: "地下歷史檔案長廊，牆上排列焦痕文件與時間線標記",
+    },
     description:
       "以垂直時間線回顧黑暗年代、飢餓遊戲、反抗與重建，把散落事件放回歷史脈絡。",
   },

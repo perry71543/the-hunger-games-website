@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const emberCount = 18;
 
@@ -98,6 +99,15 @@ export function Hero({ stats }: HeroProps) {
         </div>
 
         <div className="monument-vault archive-panel relative min-h-[320px] overflow-hidden p-4 sm:min-h-[380px] sm:p-6 md:min-h-[440px] md:p-8">
+          <Image
+            src="/images/panem-archive-hero.png"
+            alt="暗色地下紀念檔案館，火光照亮檔案櫃與紀念碑"
+            fill
+            priority
+            sizes="(min-width: 768px) 42vw, 100vw"
+            className="object-cover opacity-40 mix-blend-screen"
+          />
+          <div className="absolute inset-0 bg-black/35" />
           <div className="scanline" aria-hidden="true" />
           <div className="absolute inset-x-8 top-8 h-px bg-orange-200/20" />
           <div className="absolute inset-x-8 bottom-8 h-px bg-orange-200/20" />
