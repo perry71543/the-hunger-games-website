@@ -11,7 +11,32 @@ export const metadata: Metadata = {
   },
   description:
     "A private archive for Panem, rebellion, memory, and fire.",
-  metadataBase: new URL("https://example.com"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ??
+      "https://mockingjay-memorial-archive.vercel.app",
+  ),
+  openGraph: {
+    title: "Mockingjay Memorial Archive",
+    description:
+      "A private archive for Panem, rebellion, memory, and fire.",
+    type: "website",
+    locale: "zh_TW",
+    images: [
+      {
+        url: "/images/panem-archive-hero.jpg",
+        width: 1280,
+        height: 720,
+        alt: "Mockingjay Memorial Archive underground memorial vault",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mockingjay Memorial Archive",
+    description:
+      "A private archive for Panem, rebellion, memory, and fire.",
+    images: ["/images/panem-archive-hero.jpg"],
+  },
 };
 
 export default function RootLayout({

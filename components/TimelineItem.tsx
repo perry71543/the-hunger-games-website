@@ -1,3 +1,4 @@
+import { FavoriteButton } from "@/components/FavoriteButton";
 import type { TimelineEvent } from "@/lib/data";
 
 type TimelineItemProps = {
@@ -11,7 +12,19 @@ export function TimelineItem({ event }: TimelineItemProps) {
       <div className="archive-card-enhanced archive-panel p-6">
         <div className="flex items-start justify-between gap-4">
           <p className="archive-kicker">{event.era}</p>
-          <span className="dossier-chip">TL</span>
+          <div className="flex items-center gap-2">
+            <FavoriteButton
+              compact
+              item={{
+                id: `timeline:${event.id}`,
+                type: "Timeline",
+                title: event.title,
+                href: "/timeline",
+                subtitle: event.era,
+              }}
+            />
+            <span className="dossier-chip">TL</span>
+          </div>
         </div>
         <h3 className="mt-3 text-2xl font-bold text-stone-50">
           {event.title}

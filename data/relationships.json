@@ -1,0 +1,65 @@
+[
+  {
+    "id": "rel-katniss-peeta",
+    "source": "Katniss Everdeen",
+    "target": "Peeta Mellark",
+    "type": "Ally / Shared Survivor",
+    "note": "兩人的關係橫跨策略、表演、創傷與真實情感，是整個檔案庫最重要的互相見證之一。"
+  },
+  {
+    "id": "rel-katniss-prim",
+    "source": "Katniss Everdeen",
+    "target": "Primrose Everdeen",
+    "type": "Family / Motive",
+    "note": "Katniss 最初的選擇來自保護 Prim，這條線也讓故事始終回到家人與無辜者的代價。"
+  },
+  {
+    "id": "rel-katniss-gale",
+    "source": "Katniss Everdeen",
+    "target": "Gale Hawthorne",
+    "type": "Friendship / Political Tension",
+    "note": "他們共享第十二區的飢餓與狩獵生活，但在反抗策略與代價的問題上逐漸分岔。"
+  },
+  {
+    "id": "rel-haymitch-tributes",
+    "source": "Haymitch Abernathy",
+    "target": "Katniss Everdeen",
+    "type": "Mentor / Victor Memory",
+    "note": "Haymitch 的指導帶著倖存者的殘酷清醒，也讓 Katniss 看見遊戲背後的政治機器。"
+  },
+  {
+    "id": "rel-cinna-katniss",
+    "source": "Cinna",
+    "target": "Katniss Everdeen",
+    "type": "Stylist / Symbol Builder",
+    "note": "Cinna 把形象轉化成訊息，使 Katniss 的公開姿態逐步脫離 Capitol 的控制。"
+  },
+  {
+    "id": "rel-rue-katniss",
+    "source": "Rue",
+    "target": "Katniss Everdeen",
+    "type": "Arena Alliance / Memorial",
+    "note": "Rue 的記憶讓競技場中的死亡重新變成具體的名字，也推動反抗的情感火線。"
+  },
+  {
+    "id": "rel-finnick-johanna",
+    "source": "Finnick Odair",
+    "target": "Johanna Mason",
+    "type": "Victor Network",
+    "note": "兩人都揭開勝利者光環背後的傷害，讓勝利不再只是 Capitol 宣傳中的獎賞。"
+  },
+  {
+    "id": "rel-snow-lucy",
+    "source": "President Snow",
+    "target": "Lucy Gray Baird",
+    "type": "Prequel Shadow",
+    "note": "Lucy Gray 的自由與不確定性，映照 Snow 後來對控制、表演與失序的恐懼。"
+  },
+  {
+    "id": "rel-snow-katniss",
+    "source": "President Snow",
+    "target": "Katniss Everdeen",
+    "type": "Power / Symbol Conflict",
+    "note": "Snow 試圖管理恐懼與希望，Katniss 則成為最難被完整收編的象徵。"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "gallery-hero-vault",
+    "title": "地下紀念檔案館",
+    "category": "Memorial Space",
+    "src": "/images/panem-archive-hero.jpg",
+    "alt": "暗色地下紀念檔案館，火光照亮檔案櫃與紀念碑",
+    "description": "首頁主視覺使用的私人檔案館場景，象徵記憶、火光與戰後保存。"
+  },
+  {
+    "id": "gallery-character-wall",
+    "title": "角色檔案牆",
+    "category": "Character Files",
+    "src": "/images/character-dossiers.jpg",
+    "alt": "暗色角色檔案牆，排列著匿名人物剪影與資料夾",
+    "description": "用來承載角色資料的視覺索引，像一面尚未完全解密的證詞牆。"
+  },
+  {
+    "id": "gallery-district-map",
+    "title": "Panem 分區資料桌",
+    "category": "District Records",
+    "src": "/images/district-records-map.jpg",
+    "alt": "暗色金屬桌上的分區地圖、工業材料與標記針",
+    "description": "分區、產業與戰後狀態的視覺化入口，強調地圖與供應鏈的檔案感。"
+  },
+  {
+    "id": "gallery-timeline-corridor",
+    "title": "反抗時間長廊",
+    "category": "Timeline",
+    "src": "/images/timeline-archive.jpg",
+    "alt": "地下歷史檔案長廊，牆上排列焦痕文件與時間線標記",
+    "description": "把黑暗年代、遊戲、反抗與重建放入同一條歷史走廊中。"
+  },
+  {
+    "id": "gallery-quote-ledger",
+    "title": "名言與短札桌",
+    "category": "Quote Ledger",
+    "src": "/images/memorial-quotes.jpg",
+    "alt": "紀念火盆旁堆疊著筆記卡、封存信件與暗紅布料",
+    "description": "收藏短句、改寫筆記與私人閱讀心得的安靜角落。"
+  },
+  {
+    "id": "gallery-private-desk",
+    "title": "私人整理工作台",
+    "category": "Private Notes",
+    "src": "/images/private-archive-desk.jpg",
+    "alt": "私人檔案桌面，燭光照亮筆記本、索引卡與檔案章",
+    "description": "象徵這個網站的核心定位：非官方、非商業、以個人整理與紀念為主。"
+  }
+]

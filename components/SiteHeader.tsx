@@ -9,6 +9,10 @@ const navItems = [
   { href: "/districts", label: "Districts" },
   { href: "/timeline", label: "Timeline" },
   { href: "/quotes", label: "Quotes" },
+  { href: "/gallery", label: "Gallery" },
+  { href: "/notes", label: "Notes" },
+  { href: "/relationships", label: "Relations" },
+  { href: "/favorites", label: "Favorites" },
   { href: "/about", label: "About" },
 ];
 

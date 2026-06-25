@@ -1,6 +1,6 @@
 import { SectionTitle } from "@/components/SectionTitle";
-import { TimelineItem } from "@/components/TimelineItem";
 import { VisualBanner } from "@/components/VisualBanner";
+import { TimelineExplorer } from "@/components/explorer/TimelineExplorer";
 import { getTimeline } from "@/lib/data";
 
 export const metadata = {
@@ -18,16 +18,12 @@ export default function TimelinePage() {
         description="從黑暗年代到戰後重建，將故事中的政治創傷、競技場與反抗脈絡整理成一條私人年表。"
       />
       <VisualBanner
-        src="/images/timeline-archive.png"
+        src="/images/timeline-archive.jpg"
         alt="地下歷史檔案長廊，牆上排列焦痕文件與時間線標記"
         label="Rebellion / Collapse / Reconstruction"
       />
       <section className="archive-shell pb-16">
-        <div className="relative space-y-6 before:absolute before:bottom-0 before:left-[7px] before:top-2 before:w-px before:bg-orange-200/15">
-          {events.map((event) => (
-            <TimelineItem key={event.id} event={event} />
-          ))}
-        </div>
+        <TimelineExplorer events={events} />
       </section>
     </>
   );

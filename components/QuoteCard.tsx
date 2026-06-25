@@ -1,3 +1,4 @@
+import { FavoriteButton } from "@/components/FavoriteButton";
 import type { Quote } from "@/lib/data";
 
 type QuoteCardProps = {
@@ -9,7 +10,19 @@ export function QuoteCard({ quote }: QuoteCardProps) {
     <article className="archive-card-enhanced archive-panel h-full p-6 transition duration-300 hover:-translate-y-1 hover:border-orange-200/30 hover:bg-zinc-900/70 hover:shadow-ember">
       <div className="mb-5 flex items-center justify-between gap-4">
         <p className="archive-kicker">Quote Ledger</p>
-        <span className="dossier-chip">QT</span>
+        <div className="flex items-center gap-2">
+          <FavoriteButton
+            compact
+            item={{
+              id: `quote:${quote.id}`,
+              type: "Quote",
+              title: quote.text,
+              href: "/quotes",
+              subtitle: `${quote.speaker} / ${quote.source}`,
+            }}
+          />
+          <span className="dossier-chip">QT</span>
+        </div>
       </div>
       <p className="text-xl font-semibold leading-8 text-orange-50">
         “{quote.text}”

@@ -14,7 +14,7 @@ export default function AboutPage() {
         description="這是一個私人使用的《飢餓遊戲 / The Hunger Games》紀念網站，目標是保存個人閱讀記憶、整理資料索引，並以安靜的檔案館形式回望 Panem 的故事。"
       />
       <VisualBanner
-        src="/images/private-archive-desk.png"
+        src="/images/private-archive-desk.jpg"
         alt="私人檔案桌面，燭光照亮筆記本、索引卡與檔案章"
         label="Private Fan Archive Workspace"
       />

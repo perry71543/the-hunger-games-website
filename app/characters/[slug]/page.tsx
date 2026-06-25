@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { CharacterPortrait } from "@/components/CharacterPortrait";
+import { FavoriteButton } from "@/components/FavoriteButton";
 import { SectionTitle } from "@/components/SectionTitle";
 import { getCharacterBySlug, getCharacters } from "@/lib/data";
 
@@ -43,12 +46,31 @@ export default async function CharacterDetailPage({
         title={character.name}
         description={character.role}
       />
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Characters", href: "/characters" },
+          { label: character.name },
+        ]}
+      />
       <section className="archive-shell pb-16">
-        <div className="grid gap-6 lg:grid-cols-[0.74fr_0.26fr]">
+        <div className="grid gap-6 pt-6 lg:grid-cols-[0.68fr_0.32fr]">
           <article className="archive-card-enhanced archive-panel p-6 sm:p-8">
             <div className="flex items-start justify-between gap-4">
               <p className="archive-kicker">Archive Note</p>
-              <span className="dossier-chip">CH</span>
+              <div className="flex items-center gap-2">
+                <FavoriteButton
+                  compact
+                  item={{
+                    id: `character:${character.slug}`,
+                    type: "Character",
+                    title: character.name,
+                    href: `/characters/${character.slug}`,
+                    subtitle: `${character.district} / ${character.role}`,
+                  }}
+                />
+                <span className="dossier-chip">CH</span>
+              </div>
             </div>
             <p className="mt-5 text-lg leading-9 text-stone-200/90">
               {character.description}
@@ -73,6 +95,10 @@ export default async function CharacterDetailPage({
           </article>
 
           <aside className="space-y-5">
+            <div className="archive-card-enhanced archive-panel overflow-hidden p-3">
+              <CharacterPortrait character={character} />
+            </div>
+
             <div className="archive-card-enhanced archive-panel p-6">
               <p className="archive-kicker">Tags</p>
               <div className="mt-5 flex flex-wrap gap-2">

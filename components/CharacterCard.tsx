@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CharacterPortrait } from "@/components/CharacterPortrait";
 import type { Character } from "@/lib/data";
 
 type CharacterCardProps = {
@@ -11,6 +12,9 @@ export function CharacterCard({ character }: CharacterCardProps) {
       href={`/characters/${character.slug}`}
       className="archive-card-enhanced archive-panel group block h-full p-6 transition duration-300 hover:-translate-y-1 hover:border-orange-200/30 hover:bg-zinc-900/70 hover:shadow-ember"
     >
+      <div className="mb-5 overflow-hidden border border-orange-200/10 bg-black/35">
+        <CharacterPortrait character={character} compact />
+      </div>
       <div className="flex items-start justify-between gap-4">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-orange-200/70">
@@ -20,9 +24,7 @@ export function CharacterCard({ character }: CharacterCardProps) {
             {character.name}
           </h3>
         </div>
-        <span className="dossier-chip">
-          CH
-        </span>
+        <span className="dossier-chip">CH</span>
       </div>
       <p className="mt-3 text-sm font-semibold text-stone-300">
         {character.role}

@@ -100,7 +100,7 @@ export function Hero({ stats }: HeroProps) {
 
         <div className="monument-vault archive-panel relative min-h-[320px] overflow-hidden p-4 sm:min-h-[380px] sm:p-6 md:min-h-[440px] md:p-8">
           <Image
-            src="/images/panem-archive-hero.png"
+            src="/images/panem-archive-hero.jpg"
             alt="暗色地下紀念檔案館，火光照亮檔案櫃與紀念碑"
             fill
             priority

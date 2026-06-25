@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { DistrictBadge } from "@/components/DistrictBadge";
 import type { District } from "@/lib/data";
 
 type DistrictCardProps = {
@@ -15,7 +16,7 @@ export function DistrictCard({ district }: DistrictCardProps) {
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-200/70">
           District {district.id}
         </p>
-        <span className="dossier-chip">D{district.id}</span>
+        <DistrictBadge district={district} />
       </div>
       <h3 className="mt-4 text-2xl font-bold text-stone-50">
         {district.industry}

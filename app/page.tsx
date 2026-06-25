@@ -1,6 +1,16 @@
+import Image from "next/image";
+import Link from "next/link";
 import { ArchiveCard } from "@/components/ArchiveCard";
 import { Hero } from "@/components/Hero";
-import { getCharacters, getDistricts, getTimeline } from "@/lib/data";
+import {
+  getCharacters,
+  getDistricts,
+  getGalleryImages,
+  getQuotes,
+  getRelationships,
+  getTimeline,
+} from "@/lib/data";
+import { getNotes } from "@/lib/notes";
 
 const entryCards = [
   {
@@ -9,7 +19,7 @@ const entryCards = [
     marker: "Character Files",
     code: "CF",
     image: {
-      src: "/images/character-dossiers.png",
+      src: "/images/character-dossiers.jpg",
       alt: "暗色角色檔案牆，排列著匿名人物剪影與資料夾",
     },
     description:
@@ -21,7 +31,7 @@ const entryCards = [
     marker: "District Records",
     code: "DR",
     image: {
-      src: "/images/district-records-map.png",
+      src: "/images/district-records-map.jpg",
       alt: "暗色金屬桌上的分區地圖、工業材料與標記針",
     },
     description:
@@ -33,7 +43,7 @@ const entryCards = [
     marker: "Historical Timeline",
     code: "TL",
     image: {
-      src: "/images/timeline-archive.png",
+      src: "/images/timeline-archive.jpg",
       alt: "地下歷史檔案長廊，牆上排列焦痕文件與時間線標記",
     },
     description:
@@ -47,6 +57,10 @@ export default function HomePage() {
     districts: getDistricts().length,
     timeline: getTimeline().length,
   };
+  const featuredImages = getGalleryImages().slice(3, 6);
+  const featuredQuote = getQuotes()[0];
+  const relationshipCount = getRelationships().length;
+  const noteCount = getNotes().length;
 
   return (
     <>
@@ -88,6 +102,83 @@ export default function HomePage() {
               Archive
             </span>
           </div>
+        </div>
+
+        <div className="mt-6 grid gap-5 lg:grid-cols-[1.08fr_0.92fr]">
+          <article className="archive-card-enhanced archive-panel overflow-hidden">
+            <div className="relative min-h-[320px]">
+              <Image
+                src="/images/private-archive-desk.jpg"
+                alt="私人檔案桌面，燭光照亮筆記本、索引卡與檔案章"
+                fill
+                sizes="(min-width: 1024px) 560px, 100vw"
+                className="object-cover opacity-70"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-transparent" />
+              <div className="relative flex min-h-[320px] max-w-xl flex-col justify-end p-6 sm:p-8">
+                <p className="archive-kicker">Featured Archive</p>
+                <h2 className="mt-4 text-3xl font-black leading-tight text-stone-50">
+                  私人筆記、圖片牆與關係索引已上架
+                </h2>
+                <p className="mt-4 text-sm leading-7 text-stone-300/80">
+                  除了角色與分區，現在可以從 Gallery 進入視覺檔案，從 Notes 閱讀私人整理，
+                  或從 Relations 追蹤人物之間的象徵與創傷連結。
+                </p>
+                <div className="mt-6 flex flex-wrap gap-3">
+                  <Link
+                    href="/gallery"
+                    className="border border-orange-300/35 bg-orange-300/10 px-4 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-orange-100 transition hover:border-orange-200/65 hover:bg-orange-300/20"
+                  >
+                    Open gallery
+                  </Link>
+                  <Link
+                    href="/notes"
+                    className="border border-stone-200/10 bg-black/35 px-4 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-stone-200 transition hover:border-orange-200/30 hover:bg-white/[0.04]"
+                  >
+                    Read notes
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <aside className="grid gap-5">
+            <div className="archive-card-enhanced archive-panel p-6">
+              <p className="archive-kicker">Recovered Fragment</p>
+              <p className="mt-4 text-2xl font-semibold leading-9 text-orange-50">
+                “{featuredQuote.text}”
+              </p>
+              <p className="mt-4 text-sm leading-7 text-stone-300/75">
+                {featuredQuote.note}
+              </p>
+            </div>
+            <div className="archive-panel grid grid-cols-3 text-center">
+              <div className="border-r border-orange-200/10 p-4">
+                <p className="text-2xl font-black text-orange-100">
+                  {relationshipCount}
+                </p>
+                <p className="mt-1 text-[10px] uppercase tracking-[0.18em] text-stone-500">
+                  Relations
+                </p>
+              </div>
+              <div className="border-r border-orange-200/10 p-4">
+                <p className="text-2xl font-black text-orange-100">
+                  {featuredImages.length}
+                </p>
+                <p className="mt-1 text-[10px] uppercase tracking-[0.18em] text-stone-500">
+                  Visuals
+                </p>
+              </div>
+              <div className="p-4">
+                <p className="text-2xl font-black text-orange-100">
+                  {noteCount.toString().padStart(2, "0")}
+                </p>
+                <p className="mt-1 text-[10px] uppercase tracking-[0.18em] text-stone-500">
+                  Notes
+                </p>
+              </div>
+            </div>
+          </aside>
         </div>
       </section>
     </>

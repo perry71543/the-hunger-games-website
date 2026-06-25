@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "check": "npm run validate:data && npm run lint && npm run build",
+    "smoke": "node scripts/smoke_test.mjs",
+    "check": "npm run validate:data && npm run smoke && npm run lint && npm run build",
     "validate:data": "if command -v python >/dev/null 2>&1; then python scripts/validate_data.py; else /usr/bin/python3 scripts/validate_data.py; fi"
   },
   "dependencies": {

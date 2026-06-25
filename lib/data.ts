@@ -1,6 +1,8 @@
 import charactersData from "@/data/characters.json";
 import districtsData from "@/data/districts.json";
+import galleryData from "@/data/gallery.json";
 import quotesData from "@/data/quotes.json";
+import relationshipsData from "@/data/relationships.json";
 import timelineData from "@/data/timeline.json";
 
 export type Character = {
@@ -39,10 +41,29 @@ export type Quote = {
   note: string;
 };
 
+export type GalleryImage = {
+  id: string;
+  title: string;
+  category: string;
+  src: string;
+  alt: string;
+  description: string;
+};
+
+export type Relationship = {
+  id: string;
+  source: string;
+  target: string;
+  type: string;
+  note: string;
+};
+
 const characters = charactersData as Character[];
 const districts = districtsData as District[];
 const timeline = timelineData as TimelineEvent[];
 const quotes = quotesData as Quote[];
+const gallery = galleryData as GalleryImage[];
+const relationships = relationshipsData as Relationship[];
 
 export function getCharacters() {
   return characters;
@@ -66,4 +87,12 @@ export function getTimeline() {
 
 export function getQuotes() {
   return quotes;
+}
+
+export function getGalleryImages() {
+  return gallery;
+}
+
+export function getRelationships() {
+  return relationships;
 }

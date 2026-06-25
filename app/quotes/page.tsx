@@ -18,7 +18,7 @@ export default function QuotesPage() {
         description="這裡只保留少量短句或自行改寫的閱讀筆記，避免大量引用原作文字。"
       />
       <VisualBanner
-        src="/images/memorial-quotes.png"
+        src="/images/memorial-quotes.jpg"
         alt="紀念火盆旁堆疊著筆記卡、封存信件與暗紅布料"
         label="Memory Notes / Short Fragments"
       />

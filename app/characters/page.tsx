@@ -1,6 +1,6 @@
-import { CharacterCard } from "@/components/CharacterCard";
 import { SectionTitle } from "@/components/SectionTitle";
 import { VisualBanner } from "@/components/VisualBanner";
+import { CharacterExplorer } from "@/components/explorer/CharacterExplorer";
 import { getCharacters } from "@/lib/data";
 
 export const metadata = {
@@ -18,16 +18,12 @@ export default function CharactersPage() {
         description="以私人檔案庫形式整理 Panem 相關人物，包含分區、身份、標籤與簡短註記。"
       />
       <VisualBanner
-        src="/images/character-dossiers.png"
+        src="/images/character-dossiers.jpg"
         alt="暗色角色檔案牆，排列著匿名人物剪影與資料夾"
         label="Tribute / Victor / Rebel Records"
       />
       <section className="archive-shell pb-16">
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {characters.map((character) => (
-            <CharacterCard key={character.slug} character={character} />
-          ))}
-        </div>
+        <CharacterExplorer characters={characters} />
       </section>
     </>
   );
