@@ -9,13 +9,13 @@ export function DistrictCard({ district }: DistrictCardProps) {
   return (
     <Link
       href={`/districts/${district.id}`}
-      className="archive-panel group block h-full p-6 transition duration-300 hover:-translate-y-1 hover:border-orange-200/30 hover:bg-zinc-900/70 hover:shadow-ember"
+      className="archive-card-enhanced archive-panel group block h-full p-6 transition duration-300 hover:-translate-y-1 hover:border-orange-200/30 hover:bg-zinc-900/70 hover:shadow-ember"
     >
       <div className="flex items-center justify-between gap-4">
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-200/70">
           District {district.id}
         </p>
-        <span className="h-2 w-2 rounded-full bg-orange-300 shadow-ember" />
+        <span className="dossier-chip">D{district.id}</span>
       </div>
       <h3 className="mt-4 text-2xl font-bold text-stone-50">
         {district.industry}
@@ -24,6 +24,12 @@ export function DistrictCard({ district }: DistrictCardProps) {
       <p className="mt-5 line-clamp-3 text-sm leading-7 text-stone-300/75">
         {district.description}
       </p>
+      <div className="mt-6 flex items-center justify-between border-t border-orange-200/10 pt-4 text-xs uppercase text-stone-500">
+        <span>Open district record</span>
+        <span className="text-orange-200 transition group-hover:translate-x-1">
+          →
+        </span>
+      </div>
     </Link>
   );
 }

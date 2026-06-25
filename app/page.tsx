@@ -1,5 +1,6 @@
 import { ArchiveCard } from "@/components/ArchiveCard";
 import { Hero } from "@/components/Hero";
+import { getCharacters, getDistricts, getTimeline } from "@/lib/data";
 
 const entryCards = [
   {
@@ -29,9 +30,15 @@ const entryCards = [
 ];
 
 export default function HomePage() {
+  const stats = {
+    characters: getCharacters().length,
+    districts: getDistricts().length,
+    timeline: getTimeline().length,
+  };
+
   return (
     <>
-      <Hero />
+      <Hero stats={stats} />
       <section className="archive-shell relative pb-16 pt-4">
         <div className="mb-5 flex flex-col justify-between gap-3 border-y border-orange-200/10 py-5 sm:flex-row sm:items-end">
           <div>

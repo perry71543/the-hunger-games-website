@@ -45,8 +45,11 @@ export default async function CharacterDetailPage({
       />
       <section className="archive-shell pb-16">
         <div className="grid gap-6 lg:grid-cols-[0.74fr_0.26fr]">
-          <article className="archive-panel p-6 sm:p-8">
-            <p className="archive-kicker">Archive Note</p>
+          <article className="archive-card-enhanced archive-panel p-6 sm:p-8">
+            <div className="flex items-start justify-between gap-4">
+              <p className="archive-kicker">Archive Note</p>
+              <span className="dossier-chip">CH</span>
+            </div>
             <p className="mt-5 text-lg leading-9 text-stone-200/90">
               {character.description}
             </p>
@@ -70,7 +73,7 @@ export default async function CharacterDetailPage({
           </article>
 
           <aside className="space-y-5">
-            <div className="archive-panel p-6">
+            <div className="archive-card-enhanced archive-panel p-6">
               <p className="archive-kicker">Tags</p>
               <div className="mt-5 flex flex-wrap gap-2">
                 {character.tags.map((tag) => (
@@ -84,7 +87,7 @@ export default async function CharacterDetailPage({
               </div>
             </div>
 
-            <div className="archive-panel p-6">
+            <div className="archive-card-enhanced archive-panel p-6">
               <p className="archive-kicker">Related Quotes</p>
               <ul className="mt-5 space-y-3">
                 {character.relatedQuotes.map((quote) => (

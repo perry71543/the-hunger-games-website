@@ -43,14 +43,17 @@ export default async function DistrictDetailPage({ params }: DistrictPageProps) 
       />
       <section className="archive-shell pb-16">
         <div className="grid gap-6 lg:grid-cols-[0.68fr_0.32fr]">
-          <article className="archive-panel p-6 sm:p-8">
-            <p className="archive-kicker">District Brief</p>
+          <article className="archive-card-enhanced archive-panel p-6 sm:p-8">
+            <div className="flex items-start justify-between gap-4">
+              <p className="archive-kicker">District Brief</p>
+              <span className="dossier-chip">D{district.id}</span>
+            </div>
             <p className="mt-5 text-lg leading-9 text-stone-200/90">
               {district.description}
             </p>
           </article>
 
-          <aside className="archive-panel p-6">
+          <aside className="archive-card-enhanced archive-panel p-6">
             <p className="archive-kicker">Notable Characters</p>
             <ul className="mt-5 space-y-3">
               {district.notableCharacters.map((name) => (
