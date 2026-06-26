@@ -39,10 +39,86 @@
   text-transform: uppercase;
 }
 
+.rebel-stamp {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(252, 165, 165, 0.28);
+  background:
+    linear-gradient(90deg, rgba(127, 29, 29, 0.55), rgba(0, 0, 0, 0.5)),
+    repeating-linear-gradient(
+      -12deg,
+      rgba(255, 255, 255, 0.06) 0,
+      rgba(255, 255, 255, 0.06) 1px,
+      transparent 1px,
+      transparent 7px
+    );
+  box-shadow: 0 0 28px rgba(220, 38, 38, 0.18);
+  color: rgba(254, 226, 226, 0.9);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  padding: 0.45rem 0.6rem;
+  text-transform: uppercase;
+}
+
+.rebel-frequency {
+  border: 1px solid rgba(252, 165, 165, 0.18);
+  background: rgba(69, 10, 10, 0.26);
+  color: rgba(254, 226, 226, 0.78);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 0.45rem 0.7rem;
+  text-transform: uppercase;
+}
+
+.rebel-dispatch {
+  position: relative;
+  border: 1px solid rgba(254, 215, 170, 0.1);
+  background:
+    radial-gradient(circle at 12% 18%, rgba(220, 38, 38, 0.18), transparent 18rem),
+    radial-gradient(circle at 90% 0%, rgba(249, 115, 22, 0.16), transparent 22rem),
+    linear-gradient(135deg, rgba(69, 10, 10, 0.44), rgba(0, 0, 0, 0.35));
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.42);
+}
+
+.rebel-dispatch::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(254, 226, 226, 0.035) 0,
+      rgba(254, 226, 226, 0.035) 1px,
+      transparent 1px,
+      transparent 12px
+    ),
+    linear-gradient(90deg, transparent, rgba(248, 113, 113, 0.08), transparent);
+  opacity: 0.75;
+}
+
+.rebel-dispatch::after {
+  pointer-events: none;
+  content: "TRANSMISSION INTERCEPTED";
+  position: absolute;
+  bottom: 1rem;
+  right: -2.4rem;
+  transform: rotate(-8deg);
+  border: 1px solid rgba(252, 165, 165, 0.18);
+  color: rgba(254, 202, 202, 0.18);
+  font-size: clamp(1.25rem, 4vw, 3.4rem);
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  padding: 0.2rem 0.8rem;
+}
+
 .hero-stage {
   background:
-    radial-gradient(circle at 50% 28%, rgba(249, 115, 22, 0.18), transparent 24rem),
-    radial-gradient(circle at 78% 32%, rgba(127, 29, 29, 0.32), transparent 28rem),
+    radial-gradient(circle at 50% 28%, rgba(249, 115, 22, 0.24), transparent 24rem),
+    radial-gradient(circle at 78% 32%, rgba(127, 29, 29, 0.44), transparent 28rem),
+    radial-gradient(circle at 18% 68%, rgba(220, 38, 38, 0.18), transparent 22rem),
     linear-gradient(180deg, rgba(7, 7, 7, 0.1), rgba(0, 0, 0, 0.34));
 }
 
@@ -53,9 +129,16 @@
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(90deg, rgba(246, 196, 83, 0.05) 1px, transparent 1px),
-    linear-gradient(rgba(246, 196, 83, 0.035) 1px, transparent 1px),
-    radial-gradient(circle at 50% 110%, rgba(249, 115, 22, 0.26), transparent 36rem);
+    linear-gradient(90deg, rgba(248, 113, 113, 0.05) 1px, transparent 1px),
+    linear-gradient(rgba(246, 196, 83, 0.04) 1px, transparent 1px),
+    repeating-linear-gradient(
+      -8deg,
+      transparent 0,
+      transparent 42px,
+      rgba(248, 113, 113, 0.04) 42px,
+      rgba(248, 113, 113, 0.04) 44px
+    ),
+    radial-gradient(circle at 50% 110%, rgba(249, 115, 22, 0.32), transparent 36rem);
   background-size: 84px 84px, 84px 84px, auto;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.86), transparent 92%);
 }
@@ -67,8 +150,8 @@
   inset: auto 0 0;
   height: 10rem;
   background:
-    radial-gradient(ellipse at 50% 100%, rgba(249, 115, 22, 0.34), transparent 56%),
-    linear-gradient(to top, rgba(69, 10, 10, 0.42), transparent);
+    radial-gradient(ellipse at 50% 100%, rgba(249, 115, 22, 0.42), transparent 56%),
+    linear-gradient(to top, rgba(127, 29, 29, 0.48), transparent);
   filter: blur(1px);
 }
 
@@ -448,6 +531,60 @@
   left: 88%;
   animation-delay: 4.9s;
   animation-duration: 12.1s;
+}
+
+.ember:nth-child(19) {
+  left: 7%;
+  animation-delay: 6s;
+  animation-duration: 10.6s;
+}
+
+.ember:nth-child(20) {
+  left: 16%;
+  animation-delay: 6.6s;
+  animation-duration: 12.2s;
+}
+
+.ember:nth-child(21) {
+  left: 32%;
+  animation-delay: 5.8s;
+  animation-duration: 9.6s;
+}
+
+.ember:nth-child(22) {
+  left: 39%;
+  animation-delay: 6.9s;
+  animation-duration: 11.4s;
+}
+
+.ember:nth-child(23) {
+  left: 55%;
+  animation-delay: 6.2s;
+  animation-duration: 10.2s;
+}
+
+.ember:nth-child(24) {
+  left: 62%;
+  animation-delay: 7.1s;
+  animation-duration: 12.6s;
+}
+
+.ember:nth-child(25) {
+  left: 74%;
+  animation-delay: 5.7s;
+  animation-duration: 9.9s;
+}
+
+.ember:nth-child(26) {
+  left: 81%;
+  animation-delay: 6.4s;
+  animation-duration: 11.8s;
+}
+
+.ember:nth-child(27) {
+  left: 94%;
+  animation-delay: 7.3s;
+  animation-duration: 10.9s;
 }
 
 @keyframes ember-rise {

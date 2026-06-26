@@ -13,14 +13,15 @@ export default function DistrictsPage() {
   return (
     <>
       <SectionTitle
-        eyebrow="District Records"
+        eyebrow="District Records / Rebel Cells"
         title="分區資料"
-        description="一份私人整理的 Panem 分區索引，記錄產業、狀態與相關人物。"
+        description="一份私人整理的 Panem 分區索引，記錄產業、狀態、供應鏈與反抗節點。"
       />
       <VisualBanner
         src="/images/district-records-map.jpg"
         alt="暗色金屬桌上的分區地圖、工業材料與標記針"
         label="Industrial District Ledger"
+        signal="Cell Map"
       />
       <section className="archive-shell pb-16">
         <DistrictExplorer districts={districts} />

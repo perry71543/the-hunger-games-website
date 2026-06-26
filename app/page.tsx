@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArchiveCard } from "@/components/ArchiveCard";
 import { Hero } from "@/components/Hero";
+import { RebelDispatch } from "@/components/RebelDispatch";
 import {
   getCharacters,
   getDistricts,
@@ -18,6 +19,7 @@ const entryCards = [
     title: "角色檔案",
     marker: "Character Files",
     code: "CF",
+    signal: "Witness Cell",
     image: {
       src: "/images/character-dossiers.jpg",
       alt: "暗色角色檔案牆，排列著匿名人物剪影與資料夾",
@@ -30,6 +32,7 @@ const entryCards = [
     title: "分區資料",
     marker: "District Records",
     code: "DR",
+    signal: "Supply Front",
     image: {
       src: "/images/district-records-map.jpg",
       alt: "暗色金屬桌上的分區地圖、工業材料與標記針",
@@ -42,6 +45,7 @@ const entryCards = [
     title: "時間線",
     marker: "Historical Timeline",
     code: "TL",
+    signal: "Uprising Log",
     image: {
       src: "/images/timeline-archive.jpg",
       alt: "地下歷史檔案長廊，牆上排列焦痕文件與時間線標記",
@@ -66,15 +70,16 @@ export default function HomePage() {
     <>
       <Hero stats={stats} />
       <section className="archive-shell relative pb-16 pt-4">
+        <RebelDispatch />
         <div className="mb-5 flex flex-col justify-between gap-3 border-y border-orange-200/10 py-5 sm:flex-row sm:items-end">
           <div>
-            <p className="archive-kicker">Primary Entrances</p>
+            <p className="archive-kicker">Primary Entrances / Rebel Index</p>
             <h2 className="mt-2 text-2xl font-black text-stone-50">
-              檔案館主索引
+              地下檔案主索引
             </h2>
           </div>
           <p className="max-w-md text-sm leading-6 text-stone-400">
-            每一張卡片都像一份戰後保存下來的檔案封面，指向角色、分區與歷史時間線。
+            每一張卡片都像一份從 Capitol 廣播底下救出的資料封面，指向角色證詞、分區細胞與反抗時間線。
           </p>
         </div>
         <div className="grid gap-5 md:grid-cols-3">
@@ -85,10 +90,10 @@ export default function HomePage() {
 
         <div className="archive-panel mt-6 grid gap-4 overflow-hidden p-5 md:grid-cols-[0.72fr_0.28fr] md:items-center">
           <div>
-            <p className="archive-kicker">Memorial Ledger</p>
+            <p className="archive-kicker">Memorial Ledger / Counter-Record</p>
             <p className="mt-3 text-sm leading-7 text-stone-300/75">
               這個首頁現在更像一座地下紀念檔案室：火光從底部滲出，掃描線掠過紀念碑，
-              而每份資料都被封存在低亮度的檔案卡中。
+              而每份資料都被封存在低亮度的檔案卡中，作為拒絕被官方歷史吞沒的反抗證詞。
             </p>
           </div>
           <div className="grid grid-cols-3 gap-2 text-center text-xs text-stone-400">
@@ -96,10 +101,10 @@ export default function HomePage() {
               Fire
             </span>
             <span className="border border-orange-200/10 bg-black/30 py-3">
-              Memory
+              Resist
             </span>
             <span className="border border-orange-200/10 bg-black/30 py-3">
-              Archive
+              Rebuild
             </span>
           </div>
         </div>
@@ -116,13 +121,13 @@ export default function HomePage() {
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-transparent" />
               <div className="relative flex min-h-[320px] max-w-xl flex-col justify-end p-6 sm:p-8">
-                <p className="archive-kicker">Featured Archive</p>
+                <p className="archive-kicker">Featured Archive / Rebel Desk</p>
                 <h2 className="mt-4 text-3xl font-black leading-tight text-stone-50">
-                  私人筆記、圖片牆與關係索引已上架
+                  私人筆記、圖片牆與反抗網絡已上架
                 </h2>
                 <p className="mt-4 text-sm leading-7 text-stone-300/80">
                   除了角色與分區，現在可以從 Gallery 進入視覺檔案，從 Notes 閱讀私人整理，
-                  或從 Relations 追蹤人物之間的象徵與創傷連結。
+                  或從 Relations 追蹤人物之間的同盟、裂痕、象徵傳遞與革命代價。
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <Link

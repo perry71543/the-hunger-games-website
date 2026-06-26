@@ -7,6 +7,7 @@ type ArchiveCardProps = {
   description: string;
   marker: string;
   code?: string;
+  signal?: string;
   image?: {
     src: string;
     alt: string;
@@ -19,6 +20,7 @@ export function ArchiveCard({
   description,
   marker,
   code = "MMA",
+  signal,
   image,
 }: ArchiveCardProps) {
   return (
@@ -36,6 +38,9 @@ export function ArchiveCard({
             className="object-cover opacity-85 transition duration-500 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/25" />
+          {signal ? (
+            <span className="rebel-stamp absolute left-3 top-3">{signal}</span>
+          ) : null}
         </div>
       ) : null}
       <div className="flex items-start justify-between gap-5">

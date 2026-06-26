@@ -13,14 +13,15 @@ export default function TimelinePage() {
   return (
     <>
       <SectionTitle
-        eyebrow="Historical Timeline"
+        eyebrow="Historical Timeline / Uprising Log"
         title="Panem 時間線"
-        description="從黑暗年代到戰後重建，將故事中的政治創傷、競技場與反抗脈絡整理成一條私人年表。"
+        description="從黑暗年代到戰後重建，將故事中的政治創傷、競技場、地下動員與反抗爆發整理成一條私人年表。"
       />
       <VisualBanner
         src="/images/timeline-archive.jpg"
         alt="地下歷史檔案長廊，牆上排列焦痕文件與時間線標記"
         label="Rebellion / Collapse / Reconstruction"
+        signal="Uprising Timeline"
       />
       <section className="archive-shell pb-16">
         <TimelineExplorer events={events} />

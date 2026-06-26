@@ -21,6 +21,7 @@ export default function QuotesPage() {
         src="/images/memorial-quotes.jpg"
         alt="紀念火盆旁堆疊著筆記卡、封存信件與暗紅布料"
         label="Memory Notes / Short Fragments"
+        signal="Rebel Margins"
       />
       <section className="archive-shell pb-16">
         <div className="grid gap-5 md:grid-cols-2">

@@ -48,9 +48,9 @@ Markdown 筆記位於 `content/notes/`，由 `lib/notes.ts` 讀取。JSON 資料
 - `/districts`：分區搜尋與狀態篩選。
 - `/timeline`：時間線搜尋與 era 篩選。
 - `/quotes`：短句與改寫筆記。
-- `/gallery`：原創檔案館風格圖片牆。
-- `/notes`：本地 Markdown 私人筆記。
-- `/relationships`：人物關係索引。
+- `/gallery`：原創檔案館與地下反抗通訊風格圖片牆。
+- `/notes`：本地 Markdown 私人筆記與 counter-record。
+- `/relationships`：人物關係與反抗網絡索引。
 - `/favorites`：只存在瀏覽器本機的收藏櫃。
 
 ## Python 驗證資料方式

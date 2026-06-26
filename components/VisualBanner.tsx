@@ -4,9 +4,10 @@ type VisualBannerProps = {
   src: string;
   alt: string;
   label: string;
+  signal?: string;
 };
 
-export function VisualBanner({ src, alt, label }: VisualBannerProps) {
+export function VisualBanner({ src, alt, label, signal }: VisualBannerProps) {
   return (
     <section className="archive-shell pb-8">
       <div className="archive-card-enhanced archive-panel relative overflow-hidden p-3">
@@ -19,6 +20,9 @@ export function VisualBanner({ src, alt, label }: VisualBannerProps) {
             className="object-cover opacity-80"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/20 to-black/55" />
+          {signal ? (
+            <span className="rebel-stamp absolute right-5 top-5">{signal}</span>
+          ) : null}
           <div className="absolute inset-x-0 bottom-0 border-t border-orange-200/10 bg-black/45 px-5 py-4 backdrop-blur">
             <p className="archive-kicker">{label}</p>
           </div>

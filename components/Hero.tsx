@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const emberCount = 18;
+const emberCount = 27;
 
 type HeroStats = {
   characters: number;
@@ -24,9 +24,9 @@ export function Hero({ stats }: HeroProps) {
 
       <div className="archive-shell relative grid gap-8 py-10 md:grid-cols-[1.04fr_0.96fr] md:items-center md:py-20 lg:py-24">
         <div className="relative z-10">
-          <div className="inline-flex items-center gap-3 border border-orange-200/15 bg-black/35 px-4 py-2 text-xs text-orange-100/80 shadow-ember backdrop-blur">
+          <div className="inline-flex items-center gap-3 border border-red-300/25 bg-black/35 px-4 py-2 text-xs text-orange-100/85 shadow-ember backdrop-blur">
             <span className="h-1.5 w-1.5 rounded-full bg-orange-300 shadow-ember" />
-            Memorial Archive / Panem Record
+            Rebel Memorial Archive / Panem Counter-Record
           </div>
 
           <h1
@@ -46,7 +46,8 @@ export function Hero({ stats }: HeroProps) {
           </p>
           <p className="mt-4 max-w-2xl text-base leading-8 text-stone-300/75">
             這是一座私人紀念檔案庫，用來整理角色、分區、時間線與閱讀後留下的
-            記憶索引。它不是官方網站，而是一份安靜保存故事火種的個人收藏。
+            記憶索引。它不是官方網站，而是一份把 Capitol 敘事重新拆開、
+            交給分區記憶保存的地下反抗檔案。
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
@@ -68,6 +69,22 @@ export function Hero({ stats }: HeroProps) {
             >
               Timeline
             </Link>
+            <Link
+              href="/#rebel-dispatch"
+              className="border border-red-300/25 bg-red-950/25 px-5 py-3 text-sm font-semibold uppercase text-red-100 transition hover:border-red-200/45 hover:bg-red-900/30"
+            >
+              Rebel Signal
+            </Link>
+          </div>
+
+          <div className="mt-5 flex max-w-2xl flex-wrap gap-2">
+            {["Capitol Signal Jammed", "District Cells Online", "Witness Ledger Open"].map(
+              (label) => (
+                <span key={label} className="rebel-frequency">
+                  {label}
+                </span>
+              ),
+            )}
           </div>
 
           <div className="mt-6 grid max-w-xl grid-cols-3 border border-orange-200/10 bg-black/25 text-center backdrop-blur">
@@ -76,7 +93,7 @@ export function Hero({ stats }: HeroProps) {
                 {stats.characters}
               </p>
               <p className="mt-1 text-[11px] uppercase text-stone-400">
-                Character Files
+                Rebel Witnesses
               </p>
             </div>
             <div className="border-r border-orange-200/10 px-2 py-3 sm:px-3 sm:py-4">
@@ -84,7 +101,7 @@ export function Hero({ stats }: HeroProps) {
                 {stats.districts}
               </p>
               <p className="mt-1 text-[11px] uppercase text-stone-400">
-                District Records
+                District Cells
               </p>
             </div>
             <div className="px-2 py-3 sm:px-3 sm:py-4">
@@ -92,7 +109,7 @@ export function Hero({ stats }: HeroProps) {
                 {stats.timeline.toString().padStart(2, "0")}
               </p>
               <p className="mt-1 text-[11px] uppercase text-stone-400">
-                Timeline Events
+                Uprising Events
               </p>
             </div>
           </div>
@@ -124,7 +141,7 @@ export function Hero({ stats }: HeroProps) {
             <div className="absolute bottom-5 left-1/2 w-[84%] -translate-x-1/2 sm:bottom-8 sm:w-[78%]">
               <div className="monument-plinth">
                 <p className="text-center text-xs font-semibold uppercase text-orange-100/75">
-                  Remember / Resist / Rebuild
+                  Remember / Resist / Reclaim / Rebuild
                 </p>
               </div>
               <div className="mt-4 grid grid-cols-3 gap-2 text-center text-xs text-stone-400">

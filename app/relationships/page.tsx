@@ -15,9 +15,9 @@ export default function RelationshipsPage() {
   return (
     <>
       <SectionTitle
-        eyebrow="Relationship Index"
+        eyebrow="Relationship Index / Rebel Network"
         title="人物關係索引"
-        description="把同盟、家人、權力對峙、勝利者網絡與象徵傳遞整理成可瀏覽的私人關係檔案。"
+        description="把同盟、家人、權力對峙、勝利者網絡、象徵傳遞與革命代價整理成可瀏覽的私人關係檔案。"
       />
       <section className="archive-shell pb-16 pt-8">
         <div className="grid gap-5 md:grid-cols-2">

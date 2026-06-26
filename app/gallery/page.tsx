@@ -12,9 +12,9 @@ export default function GalleryPage() {
   return (
     <>
       <SectionTitle
-        eyebrow="Visual Archive"
+        eyebrow="Visual Archive / Underground Press"
         title="視覺檔案牆"
-        description="收錄本站使用的原創檔案館風格視覺素材，用火光、紙本、地圖與紀念空間建立私人 Panem Archive 氛圍。"
+        description="收錄本站使用的原創檔案館風格視覺素材，用火光、紙本、地圖、地下印刷與反抗通訊建立私人 Panem Archive 氛圍。"
       />
       <section className="archive-shell pb-16 pt-8">
         <div className="grid gap-5 md:grid-cols-2">
