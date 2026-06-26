@@ -22,7 +22,7 @@ export default function NotesPage() {
             <Link
               key={note.slug}
               href={`/notes/${note.slug}`}
-              className="archive-card-enhanced archive-panel block p-6 transition duration-300 hover:-translate-y-1 hover:border-orange-200/30 hover:bg-zinc-900/70 hover:shadow-ember"
+              className="archive-card-enhanced archive-panel block p-5 transition duration-300 hover:-translate-y-1 hover:border-orange-200/25 hover:bg-zinc-900/70 hover:shadow-ember sm:p-6"
             >
               <div className="flex items-start justify-between gap-4">
                 <p className="archive-kicker">{note.category}</p>
@@ -31,7 +31,7 @@ export default function NotesPage() {
               <h2 className="mt-4 text-2xl font-bold leading-tight text-stone-50">
                 {note.title}
               </h2>
-              <p className="mt-2 text-xs uppercase tracking-[0.18em] text-stone-500">
+              <p className="mt-2 text-xs uppercase tracking-[0.08em] text-stone-500">
                 {note.date}
               </p>
               <p className="mt-5 text-sm leading-7 text-stone-300/75">

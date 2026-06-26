@@ -54,12 +54,12 @@ export function FavoriteButton({
     <button
       type="button"
       onClick={toggleFavorite}
-      className={`border text-xs font-semibold uppercase tracking-[0.16em] transition ${
+      className={`rounded-[4px] border text-xs font-semibold uppercase tracking-[0.08em] transition ${
         compact ? "px-3 py-2" : "px-4 py-3"
       } ${
         isSaved
-          ? "border-orange-300/45 bg-orange-300/15 text-orange-100"
-          : "border-stone-200/10 bg-black/25 text-stone-400 hover:border-orange-200/30 hover:text-orange-100"
+          ? "border-orange-300/40 bg-orange-300/15 text-orange-100 shadow-ember"
+          : "border-stone-200/10 bg-black/25 text-stone-400 hover:border-orange-200/30 hover:bg-white/[0.035] hover:text-orange-100"
       }`}
       aria-pressed={isSaved}
     >

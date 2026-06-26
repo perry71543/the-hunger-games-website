@@ -28,7 +28,7 @@ export default function RelationshipsPage() {
             return (
               <article
                 key={relationship.id}
-                className="archive-card-enhanced archive-panel p-6"
+                className="archive-card-enhanced archive-panel p-5 sm:p-6"
               >
                 <div className="flex items-start justify-between gap-4">
                   <p className="archive-kicker">{relationship.type}</p>
@@ -59,7 +59,7 @@ function CharacterLink({
   slug?: string;
 }) {
   const className =
-    "block border border-stone-200/10 bg-black/25 px-4 py-3 text-sm font-semibold text-stone-100 transition hover:border-orange-200/30 hover:text-orange-100";
+    "block rounded-[4px] border border-stone-200/10 bg-black/25 px-4 py-3 text-sm font-semibold text-stone-100 transition hover:border-orange-200/30 hover:bg-white/[0.035] hover:text-orange-100";
 
   return slug ? (
     <Link href={`/characters/${slug}`} className={className}>

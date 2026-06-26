@@ -132,13 +132,13 @@ export default function HomePage() {
                 <div className="mt-6 flex flex-wrap gap-3">
                   <Link
                     href="/gallery"
-                    className="border border-orange-300/35 bg-orange-300/10 px-4 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-orange-100 transition hover:border-orange-200/65 hover:bg-orange-300/20"
+                    className="hero-action hero-action-primary px-4 py-3 text-xs font-semibold uppercase"
                   >
                     Open gallery
                   </Link>
                   <Link
                     href="/notes"
-                    className="border border-stone-200/10 bg-black/35 px-4 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-stone-200 transition hover:border-orange-200/30 hover:bg-white/[0.04]"
+                    className="hero-action px-4 py-3 text-xs font-semibold uppercase"
                   >
                     Read notes
                   </Link>
@@ -162,7 +162,7 @@ export default function HomePage() {
                 <p className="text-2xl font-black text-orange-100">
                   {relationshipCount}
                 </p>
-                <p className="mt-1 text-[10px] uppercase tracking-[0.18em] text-stone-500">
+                <p className="mt-1 text-[10px] uppercase tracking-[0.08em] text-stone-500">
                   Relations
                 </p>
               </div>
@@ -170,7 +170,7 @@ export default function HomePage() {
                 <p className="text-2xl font-black text-orange-100">
                   {featuredImages.length}
                 </p>
-                <p className="mt-1 text-[10px] uppercase tracking-[0.18em] text-stone-500">
+                <p className="mt-1 text-[10px] uppercase tracking-[0.08em] text-stone-500">
                   Visuals
                 </p>
               </div>
@@ -178,7 +178,7 @@ export default function HomePage() {
                 <p className="text-2xl font-black text-orange-100">
                   {noteCount.toString().padStart(2, "0")}
                 </p>
-                <p className="mt-1 text-[10px] uppercase tracking-[0.18em] text-stone-500">
+                <p className="mt-1 text-[10px] uppercase tracking-[0.08em] text-stone-500">
                   Notes
                 </p>
               </div>

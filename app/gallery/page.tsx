@@ -21,7 +21,7 @@ export default function GalleryPage() {
           {images.map((image) => (
             <article
               key={image.id}
-              className="archive-card-enhanced archive-panel overflow-hidden transition duration-300 hover:-translate-y-1 hover:border-orange-200/30 hover:shadow-ember"
+              className="archive-card-enhanced archive-panel overflow-hidden transition duration-300 hover:-translate-y-1 hover:border-orange-200/25 hover:shadow-ember"
             >
               <div className="relative aspect-[16/10] overflow-hidden border-b border-orange-200/10 bg-black/35">
                 <Image

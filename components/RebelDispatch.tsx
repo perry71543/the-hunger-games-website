@@ -38,11 +38,11 @@ export function RebelDispatch() {
           {dispatchItems.map((item) => (
             <article
               key={item.code}
-              className="border border-red-300/15 bg-black/35 p-4 shadow-ember"
+              className="rebel-dispatch-card p-4"
             >
               <div className="flex items-center justify-between gap-3">
                 <span className="rebel-stamp">{item.code}</span>
-                <span className="h-2 w-2 bg-red-300 shadow-ember" />
+                <span className="rebel-pulse h-2 w-2 bg-red-300" />
               </div>
               <h3 className="mt-4 text-lg font-bold text-orange-50">
                 {item.title}

@@ -75,7 +75,7 @@ export function FavoritesPanel() {
             <button
               type="button"
               onClick={() => removeFavorite(favorite.id)}
-              className="border border-stone-200/10 bg-black/25 px-3 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-stone-400 transition hover:border-red-300/30 hover:text-red-100"
+              className="rounded-[4px] border border-stone-200/10 bg-black/25 px-3 py-2 text-xs font-semibold uppercase tracking-[0.08em] text-stone-400 transition hover:border-red-300/30 hover:bg-white/[0.035] hover:text-red-100"
             >
               Remove
             </button>
@@ -87,7 +87,7 @@ export function FavoritesPanel() {
           ) : null}
           <Link
             href={favorite.href}
-            className="mt-6 inline-flex border border-orange-200/20 bg-orange-300/10 px-4 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-orange-100 transition hover:border-orange-200/45 hover:bg-orange-300/15"
+            className="hero-action hero-action-primary mt-6 inline-flex px-4 py-3 text-xs font-semibold uppercase"
           >
             Open file
           </Link>

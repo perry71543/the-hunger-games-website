@@ -46,24 +46,24 @@ export function CharacterExplorer({ characters }: CharacterExplorerProps) {
     <div>
       <div className="archive-panel mb-6 grid gap-3 p-4 md:grid-cols-[1fr_220px_220px]">
         <label className="block">
-          <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-stone-500">
+          <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.08em] text-stone-500">
             Search
           </span>
           <input
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Katniss, victor, rebellion..."
-            className="w-full border border-orange-200/10 bg-black/35 px-4 py-3 text-sm text-stone-100 outline-none transition placeholder:text-stone-600 focus:border-orange-200/40"
+            className="archive-field text-sm"
           />
         </label>
         <label className="block">
-          <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-stone-500">
+          <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.08em] text-stone-500">
             District
           </span>
           <select
             value={district}
             onChange={(event) => setDistrict(event.target.value)}
-            className="w-full border border-orange-200/10 bg-black/35 px-4 py-3 text-sm text-stone-100 outline-none transition focus:border-orange-200/40"
+            className="archive-field text-sm"
           >
             <option value="all">All districts</option>
             {districts.map((item) => (
@@ -74,13 +74,13 @@ export function CharacterExplorer({ characters }: CharacterExplorerProps) {
           </select>
         </label>
         <label className="block">
-          <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.18em] text-stone-500">
+          <span className="mb-2 block text-xs font-semibold uppercase tracking-[0.08em] text-stone-500">
             Tag
           </span>
           <select
             value={tag}
             onChange={(event) => setTag(event.target.value)}
-            className="w-full border border-orange-200/10 bg-black/35 px-4 py-3 text-sm text-stone-100 outline-none transition focus:border-orange-200/40"
+            className="archive-field text-sm"
           >
             <option value="all">All tags</option>
             {tags.map((item) => (
@@ -92,7 +92,7 @@ export function CharacterExplorer({ characters }: CharacterExplorerProps) {
         </label>
       </div>
 
-      <div className="mb-4 flex items-center justify-between border-b border-orange-200/10 pb-3 text-xs uppercase tracking-[0.18em] text-stone-500">
+      <div className="mb-4 flex items-center justify-between border-b border-orange-200/10 pb-3 text-xs uppercase tracking-[0.08em] text-stone-500">
         <span>{filteredCharacters.length} records</span>
         <span>Character Explorer</span>
       </div>

@@ -105,7 +105,7 @@ export default async function CharacterDetailPage({
                 {character.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="border border-stone-200/10 bg-black/25 px-2.5 py-1 text-xs text-stone-300"
+                    className="rounded-[3px] border border-stone-200/10 bg-black/25 px-2.5 py-1 text-xs text-stone-300"
                   >
                     {tag}
                   </span>

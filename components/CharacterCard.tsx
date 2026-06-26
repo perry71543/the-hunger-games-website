@@ -10,9 +10,9 @@ export function CharacterCard({ character }: CharacterCardProps) {
   return (
     <Link
       href={`/characters/${character.slug}`}
-      className="archive-card-enhanced archive-panel group block h-full p-6 transition duration-300 hover:-translate-y-1 hover:border-orange-200/30 hover:bg-zinc-900/70 hover:shadow-ember"
+      className="archive-card-enhanced archive-panel group block h-full p-5 transition duration-300 hover:-translate-y-1 hover:border-orange-200/25 hover:bg-zinc-900/70 hover:shadow-ember sm:p-6"
     >
-      <div className="mb-5 overflow-hidden border border-orange-200/10 bg-black/35">
+      <div className="mb-5 overflow-hidden rounded-[4px] border border-orange-200/10 bg-black/35">
         <CharacterPortrait character={character} compact />
       </div>
       <div className="flex items-start justify-between gap-4">
@@ -33,7 +33,7 @@ export function CharacterCard({ character }: CharacterCardProps) {
         {character.tags.map((tag) => (
           <span
             key={tag}
-            className="border border-stone-200/10 bg-black/25 px-2.5 py-1 text-xs text-stone-400"
+            className="rounded-[3px] border border-stone-200/10 bg-black/25 px-2.5 py-1 text-xs text-stone-400"
           >
             {tag}
           </span>

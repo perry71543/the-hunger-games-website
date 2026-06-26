@@ -100,12 +100,12 @@ export default async function DistrictDetailPage({ params }: DistrictPageProps) 
                       {slug ? (
                         <Link
                           href={`/characters/${slug}`}
-                          className="block border border-stone-200/10 bg-black/25 px-4 py-3 text-sm text-stone-200 transition hover:border-orange-200/30 hover:text-orange-100"
+                          className="block rounded-[4px] border border-stone-200/10 bg-black/25 px-4 py-3 text-sm text-stone-200 transition hover:border-orange-200/30 hover:bg-white/[0.035] hover:text-orange-100"
                         >
                           {name}
                         </Link>
                       ) : (
-                        <span className="block border border-stone-200/10 bg-black/25 px-4 py-3 text-sm text-stone-200">
+                        <span className="block rounded-[4px] border border-stone-200/10 bg-black/25 px-4 py-3 text-sm text-stone-200">
                           {name}
                         </span>
                       )}

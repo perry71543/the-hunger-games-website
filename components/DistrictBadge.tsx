@@ -37,7 +37,7 @@ export function DistrictBadge({ district, size = "sm" }: DistrictBadgeProps) {
         {district.id.padStart(2, "0")}
       </span>
       <span
-        className={`mt-1 uppercase tracking-[0.18em] text-stone-500 ${
+        className={`mt-1 uppercase tracking-[0.08em] text-stone-500 ${
           isLarge ? "text-xs" : "text-[9px]"
         }`}
       >

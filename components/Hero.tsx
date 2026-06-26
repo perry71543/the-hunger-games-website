@@ -53,25 +53,25 @@ export function Hero({ stats }: HeroProps) {
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href="/characters"
-              className="border border-orange-300/35 bg-orange-300/10 px-5 py-3 text-sm font-semibold uppercase text-orange-100 shadow-ember transition hover:border-orange-200/65 hover:bg-orange-300/20"
+              className="hero-action hero-action-primary px-5 py-3 text-sm font-semibold uppercase"
             >
               Characters
             </Link>
             <Link
               href="/districts"
-              className="border border-stone-200/10 bg-black/20 px-5 py-3 text-sm font-semibold uppercase text-stone-200 transition hover:border-orange-200/30 hover:bg-white/[0.04]"
+              className="hero-action px-5 py-3 text-sm font-semibold uppercase"
             >
               Districts
             </Link>
             <Link
               href="/timeline"
-              className="border border-stone-200/10 bg-black/20 px-5 py-3 text-sm font-semibold uppercase text-stone-200 transition hover:border-orange-200/30 hover:bg-white/[0.04]"
+              className="hero-action px-5 py-3 text-sm font-semibold uppercase"
             >
               Timeline
             </Link>
             <Link
               href="/#rebel-dispatch"
-              className="border border-red-300/25 bg-red-950/25 px-5 py-3 text-sm font-semibold uppercase text-red-100 transition hover:border-red-200/45 hover:bg-red-900/30"
+              className="hero-action px-5 py-3 text-sm font-semibold uppercase text-red-100"
             >
               Rebel Signal
             </Link>
@@ -87,7 +87,7 @@ export function Hero({ stats }: HeroProps) {
             )}
           </div>
 
-          <div className="mt-6 grid max-w-xl grid-cols-3 border border-orange-200/10 bg-black/25 text-center backdrop-blur">
+          <div className="hero-stat-grid mt-6 grid max-w-xl grid-cols-3 border border-orange-200/10 bg-black/25 text-center backdrop-blur">
             <div className="border-r border-orange-200/10 px-2 py-3 sm:px-3 sm:py-4">
               <p className="text-xl font-black text-orange-100 sm:text-2xl">
                 {stats.characters}
@@ -122,9 +122,9 @@ export function Hero({ stats }: HeroProps) {
             fill
             priority
             sizes="(min-width: 768px) 42vw, 100vw"
-            className="object-cover opacity-40 mix-blend-screen"
+            className="object-cover opacity-50"
           />
-          <div className="absolute inset-0 bg-black/35" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/70" />
           <div className="scanline" aria-hidden="true" />
           <div className="absolute inset-x-8 top-8 h-px bg-orange-200/20" />
           <div className="absolute inset-x-8 bottom-8 h-px bg-orange-200/20" />
@@ -145,13 +145,13 @@ export function Hero({ stats }: HeroProps) {
                 </p>
               </div>
               <div className="mt-4 grid grid-cols-3 gap-2 text-center text-xs text-stone-400">
-                <span className="border border-stone-200/10 bg-black/35 py-2">
+                <span className="rounded-[3px] border border-stone-200/10 bg-black/35 py-2">
                   Archive
                 </span>
-                <span className="border border-stone-200/10 bg-black/35 py-2">
+                <span className="rounded-[3px] border border-stone-200/10 bg-black/35 py-2">
                   Memory
                 </span>
-                <span className="border border-stone-200/10 bg-black/35 py-2">
+                <span className="rounded-[3px] border border-stone-200/10 bg-black/35 py-2">
                   Fire
                 </span>
               </div>

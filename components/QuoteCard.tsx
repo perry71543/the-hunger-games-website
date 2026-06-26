@@ -7,7 +7,7 @@ type QuoteCardProps = {
 
 export function QuoteCard({ quote }: QuoteCardProps) {
   return (
-    <article className="archive-card-enhanced archive-panel h-full p-6 transition duration-300 hover:-translate-y-1 hover:border-orange-200/30 hover:bg-zinc-900/70 hover:shadow-ember">
+    <article className="archive-card-enhanced archive-panel h-full p-5 transition duration-300 hover:-translate-y-1 hover:border-orange-200/25 hover:bg-zinc-900/70 hover:shadow-ember sm:p-6">
       <div className="mb-5 flex items-center justify-between gap-4">
         <p className="archive-kicker">Quote Ledger</p>
         <div className="flex items-center gap-2">
@@ -29,7 +29,7 @@ export function QuoteCard({ quote }: QuoteCardProps) {
       </p>
       <div className="mt-6 border-t border-orange-200/10 pt-5">
         <p className="text-sm font-semibold text-stone-100">{quote.speaker}</p>
-        <p className="mt-1 text-xs uppercase tracking-[0.2em] text-orange-200/60">
+        <p className="mt-1 text-xs uppercase tracking-[0.1em] text-orange-200/60">
           {quote.source}
         </p>
         <p className="mt-4 text-sm leading-7 text-stone-300/75">{quote.note}</p>
